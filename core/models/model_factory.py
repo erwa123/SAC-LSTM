@@ -23,12 +23,7 @@ class Model(object):
             'predrnn':predict.PredRNN,
             'predrnn_plus': predict.PredRNN_Plus,
             'interact_convlstm': predict.InteractionConvLSTM,
-            'interact_predrnn':predict.InteractionPredRNN,
-            'interact_predrnn_plus':predict.InteractionPredRNN_Plus,
-            'cst_predrnn':predict.CST_PredRNN,
-            'sst_predrnn': predict.SST_PredRNN,
-            'dst_predrnn':predict.DST_PredRNN,
-            'interact_dst_predrnn': predict.InteractionDST_PredRNN,
+            'SAC_LSTM': predict.SAC_LSTM
         }
 
         if configs.model_name in networks_map:
