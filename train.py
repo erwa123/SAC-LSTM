@@ -14,7 +14,7 @@ import math
 
 
 # -----------------------------------------------------------------------------
-parser = argparse.ArgumentParser(description='PyTorch video prediction model - PredRNN_Plus')
+parser = argparse.ArgumentParser(description='PyTorch video prediction model - SAC-LSTM')
 
 # training/test
 parser.add_argument('--is_training', type=int, default=1)
@@ -23,8 +23,8 @@ parser.add_argument('--device', type=str, default='cuda')
 # data
 parser.add_argument('--is_parallel', type=bool, default=False)
 parser.add_argument('--dataset_name', type=str, default='radar')
-parser.add_argument('--save_dir', type=str, default='checkpoints/cikm_predrnn_plus_SA')
-parser.add_argument('--gen_frm_dir', type=str, default='/mnt/A/meteorological/2500_ref_seq/CIKM_predrnn_plus_SA/')
+parser.add_argument('--save_dir', type=str, default='checkpoints/cikm_SAC_LSTM_SA')
+parser.add_argument('--gen_frm_dir', type=str, default='/mnt/A/meteorological/2500_ref_seq/cikm_SAC_LSTM_SA/')
 parser.add_argument('--input_length', type=int, default=5)
 parser.add_argument('--total_length', type=int, default=15)
 parser.add_argument('--img_width', type=int, default=128)
@@ -33,7 +33,7 @@ parser.add_argument('--data_train_path', type=str, default="/data/data-home/shel
 parser.add_argument('--data_val_path', type=str, default="/data/data-home/shelei/data/CIKM_Radar_Data/write_txt/validation2.txt")
 parser.add_argument('--data_test_path', type=str, default="/data/data-home/shelei/data/CIKM_Radar_Data/write_txt/test_1023_modif.txt")
 # model
-parser.add_argument('--model_name', type=str, default='predrnn_plus')
+parser.add_argument('--model_name', type=str, default='SAC_LSTM')
 parser.add_argument('--pretrained_model', type=str, default='')
 parser.add_argument('--num_hidden', type=str, default='128,64,64,64')
 parser.add_argument('--filter_size', type=int, default=5)
