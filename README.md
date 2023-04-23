@@ -1,7 +1,7 @@
 
 # SAC-LSTM
 
-This is a Pytorch implementation of SAC-LSTM, a recurrent model for radar echo extrapolation (precipitation nowcasting)
+This is a Pytorch implementation of SAC-LSTM, a recurrent model for radar echo extrapolation (precipitation nowcasting). Our implementation code in MindSpore is available at https://github.com/LeiShe1/SAC-LSTM-MindSpore.
 
 
 
